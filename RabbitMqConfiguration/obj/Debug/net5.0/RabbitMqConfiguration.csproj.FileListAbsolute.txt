@@ -1,0 +1,12 @@
+C:\Users\helamanspadari\Desktop\DOCS\PTC\RabbitMqConfiguration\bin\Debug\net5.0\RabbitMqConfiguration.deps.json
+C:\Users\helamanspadari\Desktop\DOCS\PTC\RabbitMqConfiguration\bin\Debug\net5.0\RabbitMqConfiguration.dll
+C:\Users\helamanspadari\Desktop\DOCS\PTC\RabbitMqConfiguration\bin\Debug\net5.0\ref\RabbitMqConfiguration.dll
+C:\Users\helamanspadari\Desktop\DOCS\PTC\RabbitMqConfiguration\bin\Debug\net5.0\RabbitMqConfiguration.pdb
+C:\Users\helamanspadari\Desktop\DOCS\PTC\RabbitMqConfiguration\obj\Debug\net5.0\RabbitMqConfiguration.csproj.AssemblyReference.cache
+C:\Users\helamanspadari\Desktop\DOCS\PTC\RabbitMqConfiguration\obj\Debug\net5.0\RabbitMqConfiguration.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\helamanspadari\Desktop\DOCS\PTC\RabbitMqConfiguration\obj\Debug\net5.0\RabbitMqConfiguration.AssemblyInfoInputs.cache
+C:\Users\helamanspadari\Desktop\DOCS\PTC\RabbitMqConfiguration\obj\Debug\net5.0\RabbitMqConfiguration.AssemblyInfo.cs
+C:\Users\helamanspadari\Desktop\DOCS\PTC\RabbitMqConfiguration\obj\Debug\net5.0\RabbitMqConfiguration.csproj.CoreCompileInputs.cache
+C:\Users\helamanspadari\Desktop\DOCS\PTC\RabbitMqConfiguration\obj\Debug\net5.0\RabbitMqConfiguration.dll
+C:\Users\helamanspadari\Desktop\DOCS\PTC\RabbitMqConfiguration\obj\Debug\net5.0\ref\RabbitMqConfiguration.dll
+C:\Users\helamanspadari\Desktop\DOCS\PTC\RabbitMqConfiguration\obj\Debug\net5.0\RabbitMqConfiguration.pdb

@@ -1,0 +1,27 @@
+﻿@model IEnumerable<app_teste.Models.DTO.Veiculo.VeiculoDTO>
+
+@{
+    ViewData["Title"] = "Veiculos";
+}
+
+<script src="~/js/Veiculo/index.js"></script>
+
+<div class="container">
+    <div class="row">
+
+        <div class="col col-md-8">
+            <h2>Veiculos</h2>
+        </div>
+        <div class="col col-4">
+            @Html.ActionLink("INSERIR", "SalvarVeiculo", "Veiculo", null, new { @style = "color: white;", @class = "btn btn-primary float-right" })
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col col-md-12">
+
+            <div id="_Grid"></div>
+
+        </div>
+    </div>
+</div>

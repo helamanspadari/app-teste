@@ -1,0 +1,15 @@
+C:\users\helamanspadari\desktop\docs\ptc\dist\RabbitMqAPI.exe
+C:\users\helamanspadari\desktop\docs\ptc\dist\appsettings.Development.json
+C:\users\helamanspadari\desktop\docs\ptc\dist\appsettings.json
+C:\users\helamanspadari\desktop\docs\ptc\dist\RabbitMqAPI.dll
+C:\users\helamanspadari\desktop\docs\ptc\dist\RabbitMqAPI.deps.json
+C:\users\helamanspadari\desktop\docs\ptc\dist\RabbitMqAPI.runtimeconfig.json
+C:\users\helamanspadari\desktop\docs\ptc\dist\RabbitMqAPI.pdb
+C:\users\helamanspadari\desktop\docs\ptc\dist\Microsoft.OpenApi.dll
+C:\users\helamanspadari\desktop\docs\ptc\dist\Newtonsoft.Json.dll
+C:\users\helamanspadari\desktop\docs\ptc\dist\RabbitMQ.Client.dll
+C:\users\helamanspadari\desktop\docs\ptc\dist\Swashbuckle.AspNetCore.Swagger.dll
+C:\users\helamanspadari\desktop\docs\ptc\dist\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\users\helamanspadari\desktop\docs\ptc\dist\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\users\helamanspadari\desktop\docs\ptc\dist\RabbitMqConfiguration.dll
+C:\users\helamanspadari\desktop\docs\ptc\dist\RabbitMqConfiguration.pdb

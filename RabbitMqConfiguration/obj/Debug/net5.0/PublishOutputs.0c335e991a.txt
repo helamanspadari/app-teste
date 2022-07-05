@@ -1,0 +1,3 @@
+C:\users\helamanspadari\desktop\docs\ptc\dist\RabbitMqConfiguration.dll
+C:\users\helamanspadari\desktop\docs\ptc\dist\RabbitMqConfiguration.deps.json
+C:\users\helamanspadari\desktop\docs\ptc\dist\RabbitMqConfiguration.pdb

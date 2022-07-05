@@ -1,0 +1,27 @@
+﻿@model IEnumerable<app_teste.Models.DTO.Proprietario.ProprietarioDTO>
+
+@{
+    ViewData["Title"] = "Proprietarios";
+}
+
+<script src="~/js/Proprietario/index.js"></script>
+
+<div class="container">
+    <div class="row">
+
+        <div class="col col-md-8">
+            <h2>Proprietarios</h2>
+        </div>
+        <div class="col col-4">
+            @Html.ActionLink("INSERIR", "SalvarProprietario", "Proprietario", null, new { @style = "color: white;", @class = "btn btn-primary float-right" })
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col col-md-12">
+
+            <div id="_Grid"></div>
+
+        </div>
+    </div>
+</div>

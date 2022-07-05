@@ -1,0 +1,25 @@
+﻿@{
+    ViewData["Title"] = "Marcas";
+}
+
+<h2>Nova Marca</h2>
+
+<form action="/Marca/InserirMarca" method="post" class="form">
+    
+    <div class="row">
+        <div class="col col-md-12">
+            <div class="form-group">
+                <label for="lblNome">Nome Marca</label>
+                <br />
+                <input class="form-control" type="text" name="nome" value="" placeholder="" />
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col col-md-12">
+            <input class="btn btn-success form-control" type="submit" name="inserir" value="SALVAR" />
+        </div>
+    </div>
+    
+</form>
+

@@ -1,0 +1,116 @@
+﻿@model app_teste.Models.DTO.Proprietario.ProprietarioDTO?
+
+@{
+    ViewData["Title"] = "Novo proprietario";
+
+    string titulo = Model == null ? "Novo" : Model.Id > 0 ? "Alterar" : "Novo";
+}
+
+<script src="~/js/Proprietario/salvarProprietario.js"></script>
+
+<h2>@titulo Proprietario</h2>
+
+<form class="form">
+
+    <input type="hidden" name="id" id="id" value="@(Model.Id > 0 ? Model.Id : null)" />
+
+    <div class="row">
+        <div class="col col-md-12">
+            <div class="form-group">
+                <label for="lblNome">Nome Completo</label>
+                <br />
+                <input class="form-control" type="text" name="nome" id="nome" value="@(!string.IsNullOrEmpty(Model.Nome) ? Model.Nome : null)" placeholder="" required />
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col col-md-8">
+            <div class="form-group">
+                <label for="lblNome">E-mail</label>
+                <br />
+                <input class="form-control" type="text" name="email" id="email" value="@(!string.IsNullOrEmpty(Model.Email) ? Model.Email : null)" placeholder="" required />
+            </div>
+        </div>
+        <div class="col col-md-4">
+            <div class="form-group">
+                <label for="lblNome">Documento</label>
+                <br />
+                <input class="form-control" type="text" oninput="somenteNumero(this)" name="documento" id="documento" value="@Model.Documento" placeholder="" required />
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="col col-md-2" hidden>
+            <div class="form-group">
+                <label for="lblNome">CEP</label>
+                <br />
+                <input class="form-control" type="text" name="endereco" id="endereco" value="@Model.Endereco" placeholder="" />
+            </div>
+        </div>
+        <div class="col col-md-2">
+            <div class="form-group">
+                <label for="lblNome">CEP</label>
+                <br />
+                <input class="form-control" type="text" oninput="somenteNumero(this)" name="cep" id="cep" value="@Model.CEP" placeholder="" />
+            </div>
+        </div>
+        <div class="col col-md-8">
+            <div class="form-group">
+                <label for="lblNome">Endereço</label>
+                <br />
+                <input class="form-control" type="text" name="rua" id="rua" value="" placeholder="" required readonly />
+            </div>
+        </div>
+        <div class="col col-md-2">
+            <div class="form-group">
+                <label for="lblNome">Logradouro</label>
+                <br />
+                <input class="form-control" type="text" name="logradouro" id="logradouro" value="" placeholder="" required />
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col col-md-4">
+            <div class="form-group">
+                <label for="lblNome">Bairro</label>
+                <br />
+                <input class="form-control" type="text" name="bairro" id="bairro" value="" placeholder="" required readonly />
+            </div>
+        </div>
+        <div class="col col-md-4">
+            <div class="form-group">
+                <label for="lblNome">Cidade</label>
+                <br />
+                <input class="form-control" type="text" name="cidade" id="cidade" value="" placeholder="" required readonly />
+            </div>
+        </div>
+        <div class="col col-md-4">
+            <div class="form-group">
+                <label for="lblNome">UF</label>
+                <br />
+                <input class="form-control" type="text" name="uf" id="uf" value="" placeholder="" required readonly />
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col col-md-2 offset-md-5">
+            <div class="form-group text-center">
+                <label for="lblNome">Status</label>
+                <br />
+                <input class="form-control" type="checkbox" name="status" id="status" value="@Model.Status" @(Model.Status ? "checked='checked'" : "") />
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col col-md-12">
+            <a class="form-control btn btn-success" onclick="SalvarProprietario()" name="inserir">Salvar</a>
+        </div>
+    </div>
+
+</form>

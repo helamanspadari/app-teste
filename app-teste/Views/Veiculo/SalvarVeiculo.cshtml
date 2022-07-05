@@ -1,0 +1,128 @@
+﻿@model app_teste.Models.DTO.Veiculo.VeiculoDTO?
+
+@{
+    ViewData["Title"] = "Novo Veiculo";
+
+    string titulo = Model == null ? "Novo" : Model.Id > 0 ? "Alterar" : "Novo";
+    var listaProprietario = ViewBag.ListaProprietario;
+    var listaMarca = ViewBag.ListaMarca;
+    var listaStatus = ViewBag.ListaStatus;
+ }
+
+<script src="~/js/Veiculo/salvarVeiculo.js"></script>
+
+<h2>@titulo Veiculo</h2>
+
+<form class="form">
+
+    <input type="hidden" name="id" id="id" value="@Model.Id" />
+    <input type="hidden" name="prop" id="prop" value="@Model.ProprietarioId" />
+    <input type="hidden" name="marca" id="marca" value="@Model.MarcaId" />
+    <input type="hidden" name="status" id="status" value="@Model.Status" />
+
+    <div class="row">
+        <div class="col col-md-6">
+            <div class="form-group">
+                <label for="lblProprietario">Proprietario</label>
+                <br />
+                <div id="_ListaProprietario">
+                    <select id="proprietarioId" name="proprietarioId" class="form-control" required>
+                        <option value="0">Selecione o Proprietario do veiculo</option>
+                        @foreach (var item in listaProprietario)
+                        {
+                            <option value="@item.Id">@item.Nome (@item.Documento)</option>
+                        }
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="col col-md-6">
+            <div class="form-group">
+                <label for="lblNome">Renavam</label>
+                <br />
+                <input class="form-control" type="text" name="renavam" oninput="somenteNumero(this)" id="renavam" value="@Model.Renavam" placeholder="" required />
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col col-md-6">
+            <div class="form-group">
+                <label for="lblMarca">Marca</label>
+                <br />
+                <div id="_ListaMarca">
+                    <select id="marcaId" name="marcaId" class="form-control">
+                        <option value="0">Selecione a Marca do veiculo</option>
+                        @foreach (var item in listaMarca)
+                        {
+                            <option value="@item.Id">@item.Nome</option>
+                        }
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="col col-md-6">
+            <div class="form-group">
+                <label for="lblNome">Modelo</label>
+                <br />
+                <input class="form-control" type="text" name="modelo" id="modelo" value="@Model.Modelo" placeholder="" required />
+            </div>
+        </div>
+        </div>
+
+    <div class="row">
+        <div class="col col-md-6">
+            <div class="form-group">
+                <label for="lblNome">Ano Fabricação</label>
+                <br />
+                <input class="form-control" type="text" maxlength="4" minlength="4" oninput="somenteNumero(this)" name="fabricacao" id="fabricacao" value="@(Model.AnoFabricacao > 0 ? Model.AnoFabricacao : null)" placeholder=" " required />
+            </div>
+        </div>
+        <div class="col col-md-6">
+            <div class="form-group">
+                <label for="lblNome">Ano Modelo</label>
+                <br />
+                <input class="form-control" type="text" maxlength="4" minlength="4" oninput="somenteNumero(this)" name="ano" id="ano" value="@(Model.AnoModelo > 0 ? Model.AnoModelo : null)" placeholder=" " required />
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col col-md-4">
+            <div class="form-group">
+                <label for="lblNome">Quilometragem</label>
+                <br />
+                <input class="form-control" type="text" name="quilometragem" oninput="somenteNumero(this)" id="quilometragem" value="@(Model.Quilometragem > 0 ? Model.Quilometragem : null)" placeholder=" " required />
+            </div>
+        </div>
+        <div class="col col-md-4">
+            <div class="form-group">
+                <label for="lblNome">Valor (R$)</label>
+                <br />
+                <input class="form-control" type="text" name="valor" id="valor" value="@(Model.Valor > 0 ? Model.Valor : null)"  placeholder=" " required />
+            </div>
+        </div>
+        <div class="col col-md-4">
+            <div class="form-group">
+                <label for="lblNome">Status</label>
+                <br />
+                <div id="_ListaStatus">
+                    <select id="statusId" name="statusId" class="form-control">
+                        <option value="0">Selecione status do veiculo</option>
+                        @foreach (var item in listaStatus)
+                        {
+                            <option value="@item.Id">@item.DscStatus</option>
+                        }
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col col-md-12">
+            <a class="form-control btn btn-success" onclick="SalvarVeiculo()" name="inserir">Salvar</a>
+        </div>
+    </div>
+
+</form>
